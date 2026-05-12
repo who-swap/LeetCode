@@ -1,0 +1,1 @@
+class Solution {public:int removeElement(vector<int>& nums, int val){int left = nums.size()-1,right = nums.size()-1;while(left>=0){if(nums[left]==val){swap(nums[left],nums[right]);right--;}left--;}return right+1;}};
